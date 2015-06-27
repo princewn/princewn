@@ -37,23 +37,29 @@ function picItem(){
         var aLi = $('.picInfor');            
         var aSpan = aLi.find('.inforItem');
         var aImg = aLi.find('.picItem');
+		var flag=0;
         aLi.each(function(index){
             $(this).mouseenter(function(){
-                aImg.eq(index).stop();
-                aSpan.eq(index).stop();
-                aImg.eq(index).animate({
-                    height:0,
-                    top:0
-                },20,'',function(){
-                    $(this).hide();
-                    aSpan.eq(index).css({"visibility":"visible",
-							 			 "zIndex":100}).show().animate({
-                        height:400,
-                        top:0
-                    },20)
-                })
+				console.log(flag);
+				if(flag==0){					   
+					aImg.eq(index).stop();
+					aSpan.eq(index).stop();
+					aImg.eq(index).animate({
+						height:0,
+						top:0
+					},20,'',function(){
+						$(this).hide();
+						aSpan.eq(index).css({"visibility":"visible",
+											 "zIndex":100}).show().animate({
+							height:400,
+							top:0
+						},20)
+					})
+				}
+				flag=1;
             })
-            $(this).mouseout(function(){
+            $(this).mouseleave(function(){
+				flag=0;
                 aImg.eq(index).stop();
                 aSpan.eq(index).stop();
                 aSpan.eq(index).animate({
