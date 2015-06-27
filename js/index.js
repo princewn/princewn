@@ -38,7 +38,7 @@ function picItem(){
         var aSpan = aLi.find('.inforItem');
         var aImg = aLi.find('.picItem');
         aLi.each(function(index){
-            $(this).mouseover(function(){
+            $(this).mouseenter(function(){
                 aImg.eq(index).stop();
                 aSpan.eq(index).stop();
                 aImg.eq(index).animate({
