@@ -1,0 +1,512 @@
+@body-bg:    #fff;
+@text-color:@brand-danger;/*无效*/
+
+
+*{
+	overflow:visible;
+}
+.glyphiconColor{
+	color:#009900;
+	font-size:20px;
+	vertical-align:middle;
+}
+.glyphiconSize70{
+	font-size:70px;
+}
+.glyphiconSize40{
+	font-size:40px;
+}
+.right{
+	float:right;
+}
+.left{
+	float:left;
+}
+.overflowAuto{
+	overflow:auto;
+}
+.rotateX90
+{
+	transform:rotateX(90deg);
+	-webkit-transform:rotateX(90deg); /* Safari and Chrome */
+	-moz-transform:rotateX(90deg); /* Firefox */
+	-webkit-transition:all 1s;
+}
+.ideaRight{
+	/*height:0;*/
+	padding:0;
+	margin:0;
+	-webkit-transition:all 1s;
+}
+.positionRelative{
+	position:relative;
+}
+#bgColor{
+	background-color:#FFFFFF;
+}
+#opcityBlock{
+}
+#smallNav{
+	position:fixed;
+	width:100%;
+	top:0;
+	z-index:100;
+}
+.verticalText{
+	width:19px; 
+	padding-left: 7px;
+	height: 121px;
+	float:right;  
+	border-right: 1px solid #ddd;
+}
+
+
+/*jumbotronwn*/
+.jumbotronwn {
+  padding: 15px 7px;
+  margin-bottom: 15px;
+  color: inherit;
+  background-color: #eee;
+}
+.jumbotronwn h1,
+.jumbotronwn .h1 {
+  color: inherit;
+}
+.jumbotronwn p {
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 200;
+}
+.jumbotronwn > hr {
+  border-top-color: #d5d5d5;
+}
+.container .jumbotronwn,
+.container-fluid .jumbotronwn {
+  border-radius: 6px;
+}
+.jumbotronwn .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotronwn {
+    padding: 24px 0;
+  }
+  .container .jumbotronwn,
+  .container-fluid .jumbotronwn {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .jumbotronwn h1,
+  .jumbotronwn .h1 {
+    font-size: 30px;
+  }
+}
+
+/*类似jumbotron*/
+.jumbotronSmallPadding p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+
+.jumbotronSmallPadding > hr {
+  border-top-color: #d5d5d5;
+}
+
+.container .jumbotronSmallPadding,
+.container-fluid .jumbotronSmallPadding {
+  border-radius: 6px;
+}
+.jumbotronSmallPadding .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotronSmallPadding {
+    padding: 12px 0;
+  }
+  .container .jumbotronSmallPadding,
+  .container-fluid .jumbotronSmallPadding {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .jumbotronSmallPadding h1,
+  .jumbotronSmallPadding .h1 {
+    font-size: 63px;
+  }
+}
+
+
+
+
+#bottomImg{
+	position:fixed;
+	z-index:-1;
+	/*background-size:100% 100%;*/
+}
+#brand{
+	width:80px;
+	height:80px;
+}
+
+
+/*nav*/
+#navCenter{
+	margin:0 auto;
+}
+
+.navMane{
+	width:100%;
+	background-color:#CCCCCC;
+	position:absolute;
+	right:200;
+}
+.navMane>li{
+	border-bottom:#FFFFFF inset 2px;
+}
+.navText{
+	color:#009900;
+	padding:5px 20px;
+}
+.block100{
+	width:100%;
+	height:100%;
+}
+.jumbotron P{
+	font-size:14px!important;
+}
+#containerWidth{
+	width:100%;
+	margin：:0 auto;
+}
+
+
+
+
+/*概况*/
+#overviewDetact{
+	overflow:hidden;/*不在可视范围时候，宽度为0，避免溢出太长*/
+
+}
+.inforWrap{
+	height:400px;
+	width:100%;
+	background:#eee;
+}
+.inforWrapLeft{
+	height:100%;
+	width:49.5%;
+	position:relative;
+	float:left;
+}
+.inforWrapRight{
+	height:100%;
+	width:50%;
+	position:relative;
+	float:right;
+}
+@media (max-width: 768px){/*为什么这样的句子不起作用*/
+	.inforWrap{
+		height:800px;
+		width:100%;
+	}
+	.inforWrapLeft{
+		height:50%;
+		width:100%;
+		display:block;
+	}
+	.inforWrapRight{
+		height:50%;
+		width:100%;
+		display:block;
+	}
+}
+.inforInnerLeft{
+	height:100%;
+	width:0px;
+	background:#99CC33;
+	position:absolute;
+	left:0;
+}
+.inforInnerRight{
+	height:100%;
+	width:0px;
+	background:#99CC33;
+	position:absolute;
+	left:100%;
+}
+.inforChangeLeft{
+	-webkit-transition:all 1s;
+}
+.inforChangeRight{
+	-webkit-transition:all 1s;
+}
+
+/*唱片旋转*/
+.icon-spin {
+  -moz-animation: spin 6s infinite linear;
+  -o-animation: spin 6s infinite linear;
+  -webkit-animation: spin 6s infinite linear;
+  animation: spin 6s infinite linear;
+}
+@-moz-keyframes spin {
+  0% { -moz-transform: rotate(0deg); }
+  100% { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@-o-keyframes spin {
+  0% { -o-transform: rotate(0deg); }
+  100% { -o-transform: rotate(360deg); }
+}
+@-ms-keyframes spin {
+  0% { -ms-transform: rotate(0deg); }
+  100% { -ms-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/*唱片上的播放与暂停*/
+#changpianBox{
+	position:relative;
+}
+#musicStop{
+	display:inline;
+	position:absolute;
+	right:50%;
+	margin-right:-25px;
+	top:110px;
+}
+#musicStop:hover{
+	cursor:pointer;
+}
+
+#musicContinue{
+	display:inline;
+	position:absolute;
+	right:50%;
+	margin-right:-35px;
+	top:95px;
+	display:none;
+}
+#musicContinue:hover{
+	cursor:pointer;
+}
+.glyphiconSize120{
+	font-size:120px;
+}
+
+
+/*@media (max-width: 768px) {必须设置不同的情况，否则只会应用公共的
+其实默认的是小于768的，之前一直以为默认的大于768，所以看上去效果没有变化
+*/
+
+	.picInfor{
+		width:100% ;
+		display:block;
+		height:400px;
+		overflow:hidden;
+		margin:0 auto;
+	}
+	.rotatePicBase{
+		display:block;
+		margin:30px auto;
+		width:100%;
+		height:100%;
+		background-color:#6633CC;/*检测图片是否外溢*/
+	}	
+	
+	
+@media (min-width: 768px){
+	.picInfor{
+		width:33%;
+		display:inline-block;
+		height:400px;
+		overflow:hidden;
+	}
+	.rotatePicBase{
+		display:inline-block;
+		margin:30px;
+		width:25%;
+		height:100%;
+		background-color:yellow;
+		overflow:hidden;
+	}	
+}
+
+
+
+.picItem{
+	width:100%;
+	height:400px;
+}
+.inforItem{
+	width:100%;
+	height:400px;
+	position:relative;
+	top:-400px;
+	/*visibility:hidden;*/
+	z-index:-1;
+}
+.rotate180{
+	transform:rotateY(180deg);
+	-webkit-transform:rotateY(180deg); 
+	-moz-transform:rotateY(180deg); 
+}
+.picCircle{
+	width:200px;
+	height:200px;
+	margin:30px auto;
+}
+.liner{
+	height:10px;
+	background-color:#FFFFFF;
+}
+#modalContent{
+	width:100%;
+	height:400px;
+}
+#music{
+	position:fixed;
+	left:20px;
+	bottom:20px;
+}
+#idea{
+	position:relative;
+}
+#ideaRight2{
+	opcity:0.5;
+	display:none;
+}
+
+.inforChangeLeft{
+	-webkit-transition:all 1s;
+}
+.inforChangeRight{
+	-webkit-transition:all 1s;
+}
+.rotatePic{
+	/* Rotate div */
+	transform:rotate(9deg);
+	-ms-transform:rotate(9deg); /* Internet Explorer */
+	-moz-transform:rotate(9deg); /* Firefox */
+	-webkit-transform:rotate(9deg); /* Safari 和 Chrome */
+	-o-transform:rotate(9deg); /* Opera */
+}
+.rotatePicOff{/*注意角度是叠加效果*/
+	transform:rotate(-9deg);
+	-ms-transform:rotate(-9deg); /* Internet Explorer */
+	-moz-transform:rotate(-9deg); /* Firefox */
+	-webkit-transform:rotate(-9deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-9deg); /* Opera */
+}
+.scalePic{
+{
+	margin:100px;
+	transform:scale(2,4);
+	-ms-transform:scale(2,4); /* IE 9 */
+	-moz-transform:scale(2,4); /* Firefox */
+	-webkit-transform:scale(2,4); /* Safari and Chrome */
+	-o-transform:scale(2,4); /* Opera */
+}
+#animate{
+	width:100px;
+	height:100px;
+	background:red;
+	position:relative;
+	animation-name:myfirst;
+	animation-duration:5s;
+	animation-timing-function:linear;
+	animation-delay:2s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	animation-play-state:running;
+	/* Firefox: */
+	-moz-animation-name:myfirst;
+	-moz-animation-duration:5s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-delay:2s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:alternate;
+	-moz-animation-play-state:running;
+	/* Safari and Chrome: */
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:5s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+	-webkit-animation-play-state:running;
+	/* Opera: */
+	-o-animation-name:myfirst;
+	-o-animation-duration:5s;
+	-o-animation-timing-function:linear;
+	-o-animation-delay:2s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:alternate;
+	-o-animation-play-state:running;
+}
+
+@keyframes myfirst
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue; left:200px; top:200px;}
+	75%  {background:green; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue; left:200px; top:200px;}
+	75%  {background:green; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue; left:200px; top:200px;}
+	75%  {background:green; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue; left:200px; top:200px;}
+	75%  {background:green; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
+}	
+
+
+}
+
+	#dcim{
+		overflow:hidden;
+	}
+
+@media (max-width: 768px){/*为什么这样的句子不起作用*/
+	#dcim{
+		display:none;
+		z-index:-100;
+	}
+}
+#ending{
+	padding:0;
+	margin:10px auto;
+}
+
+.top5{
+	position:relative;
+	top:5px;
+}

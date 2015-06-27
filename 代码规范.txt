@@ -1,0 +1,9 @@
+1详见bootstrap
+
+注意声明顺序
+相关的属性声明应当归为一组，并按照下面的顺序排列：
+
+Positioning
+Box model
+Typographic
+Visual
